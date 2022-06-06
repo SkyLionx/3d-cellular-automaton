@@ -17,6 +17,11 @@ In order to do so, we created our dataset composed of different 3D shapes with v
 ![image info](splash-steps.png)
 
 ## Repository content
+The `deep_learning_project.ipynb` contains the Colab notebook used to develop the project, so it is better viewed directly on the Colab platform:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SkyLionx/DL2021/blob/master/deep_learning_project.ipynb)
+
+
 Inside the `shapes` folder, we uploaded the 3D voxel models used as training data. They are saved in the proprietary format .vox used by the [Voxelator editor](http://voxelator.com/).
 
 In the `videos` folder, instead, we uploaded all the videos that we produced using the pretrained models contained in the notebook. <br>
