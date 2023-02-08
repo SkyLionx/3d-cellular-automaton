@@ -1,35 +1,48 @@
-# Deep Learning Project 2021/2022
+# 🐠 3D Growing Neural Cellular Automaton
 
-## Team members
+This project is based on the work of [Mordvintsev, et al. (2020)](https://distill.pub/2020/growing-ca), which proposes a method to model the **morphogenesis** process using a **Neural Cellular Automaton** in order to reconstruct 2D images.
 
-Fabrizio Rossi 1815023
+Morphogenesis is the biological process that allows cells to **develop and persist** their shape. Starting from a simple initial form, cells grow to construct a more complex one defining connections among them.
 
-Matteo Orsini 1795119
+In the original work, from a simple image with only one pixel, called **seed**, a full target image is regenerated based on the training data. This is modeled using a Cellular Automaton which during its training learns an **update rule** which is used by each cell to update its state and eventually reconstruct the final target shape.
 
-## Project summary
+In this project, a deep model is implemented in order to replicate the morphogenesis process on a **3-dimensional Euclidean space** using voxels, as we can see from the examples below.
 
-This project is based on the work of [Mordvintsev, et al. (2020)](https://distill.pub/2020/growing-ca), which proposes a method to model the morphogenesis process using a Neural Cellular Automaton in order to reconstruct 2D images.
+<br/>
 
-In our project, we extended this concept into the 3D domain using voxels. 
+<div align="center">
+  <video src="https://user-images.githubusercontent.com/58000595/217584748-9ae87f51-d53e-4fb3-9bf7-6aed21049baf.mp4" />
+</div>
 
-In order to do so, we created our dataset composed of different 3D shapes with various sizes and trained a model able to reconstruct the 3D target shapes with good results.
+<br/>
 
 ![image info](splash-steps.png)
+
+## Contributors
+
+<a href="https://github.com/SkyLionx" target="_blank">
+  <img src="https://img.shields.io/badge/Profile-Fabrizio%20Rossi-green?style=for-the-badge&logo=github&labelColor=blue&color=white">
+</a>
+<br /><br />
+<a href="https://github.com/dotmat3" target="_blank">
+  <img src="https://img.shields.io/badge/Profile-Matteo%20Orsini-green?style=for-the-badge&logo=github&labelColor=blue&color=white">
+</a>
 
 ## Repository content
 The `deep_learning_project.ipynb` contains the Colab notebook used to develop the project, so it is better viewed directly on the Colab platform:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SkyLionx/DL2021/blob/master/deep_learning_project.ipynb)
+<a href="https://colab.research.google.com/github/SkyLionx/DL2021/blob/master/deep_learning_project.ipynb" target="_blank">
+<img src="https://img.shields.io/badge/Colab-Open%20Notebook-green?style=for-the-badge&logo=googlecolab&color=blue">
+</a>
+<br/>
+<br/>
 
+Inside the `shapes` folder, we uploaded the 3D voxel models we created which were used as training data. They are saved in the proprietary `.vox` format used by the [Voxelator editor](http://voxelator.com/).
 
-Inside the `shapes` folder, we uploaded the 3D voxel models used as training data. They are saved in the proprietary format .vox used by the [Voxelator editor](http://voxelator.com/).
-
-In the `videos` folder, instead, we uploaded all the videos that we produced using the pretrained models contained in the notebook. <br>
+Instead, in the `videos` folder we have all the videos that we produced using the pretrained models contained in the notebook. <br>
 For each shape there are three videos with different suffixes:
 - `_normal` videos are used to demostrate the persisting capabilities of the model;
 - `_damage` videos are produced using a damaged shape as input;
 - `_rotate` videos are produced giving as input an angle for the x-axis of 90 degrees.
 
-`damage_visualization.pdf` shows how our damage affects the splash model in 36 different cases, and it is a tool we used in order to assess how good our damage algorithm performed.
-
-Finally, the `splash_steps.png` file, it's the image shown above and represents how the splash model is reconstructed in a normal run.
+Finally, the file `damage_visualization.pdf` shows how our damage affects the splash model in 36 different cases, and it is a tool we used in order to assess how good our damage algorithm performed.
