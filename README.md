@@ -1,6 +1,6 @@
 # 🐠 3D Growing Neural Cellular Automaton
 
-This project is based on the work of [Mordvintsev, et al. (2020)](https://distill.pub/2020/growing-ca), which proposes a method to model the **morphogenesis** process using a **Neural Cellular Automaton** in order to reconstruct 2D images.
+This project is based on the work of <a href="https://distill.pub/2020/growing-ca" target="_blank">Mordvintsev, et al. (2020)</a>, which proposes a method to model the **morphogenesis** process using a **Neural Cellular Automaton** in order to reconstruct 2D images.
 
 Morphogenesis is the biological process that allows cells to **develop and persist** their shape. Starting from a simple initial form, cells grow to construct a more complex one defining connections among them.
 
@@ -11,7 +11,7 @@ In this project, a deep model is implemented in order to replicate the morphogen
 <br/>
 
 <div align="center">
-  <video src="https://user-images.githubusercontent.com/58000595/217584748-9ae87f51-d53e-4fb3-9bf7-6aed21049baf.mp4" />
+  <video src="https://user-images.githubusercontent.com/58000595/217600398-4ff8cc6f-8a18-4be3-b065-753a8e8493c1.mp4">
 </div>
 
 <br/>
