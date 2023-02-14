@@ -46,3 +46,13 @@ For each shape there are three videos with different suffixes:
 - `_rotate` videos are produced giving as input an angle for the x-axis of 90 degrees.
 
 Finally, the file `damage_visualization.pdf` shows how our damage affects the splash model in 36 different cases, and it is a tool we used in order to assess how good our damage algorithm performed.
+
+## Technologies
+
+In this project the following Python libraries were adopted:
+- PyTorch
+- numpy 
+- matplotlib for plotting
+- opencv for video generation
+
+Moreover, a 3D model visualizer was implemented using the Three.js library for JavaScript.
